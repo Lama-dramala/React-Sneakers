@@ -1,0 +1,42 @@
+.favorites__wrap{
+    padding: 40px 0;
+}
+.favorites__h1{
+    margin-bottom: 30px;
+}
+.favorites__empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 200px;
+}
+.favorites__empty__img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 24px;
+}
+.favorites__empty__h4{
+    font-size: 24px;
+    margin-bottom: 11px;
+}
+.favorites__empty__btn{
+    position: relative;
+    width: 245px;
+    margin-top: 70px;
+}
+.favorites__empty__btn::before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 33px;
+    width: 13.7px;
+    height: 12px;
+    background-image: url(../../public/img/arrow.svg);
+    transform: rotate(180deg);
+    background-size: cover;
+    transition: 0.2s ease-in-out;
+}
+.favorites__empty__btn:hover:before{
+    transform: translateX(-10px) rotate(180deg);
+}

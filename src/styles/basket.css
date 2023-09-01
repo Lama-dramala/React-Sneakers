@@ -1,0 +1,136 @@
+.basket__wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(138, 135, 135, 0.5);
+    overflow: hidden;
+    visibility: hidden;
+    transition: visibility 0.2s ease-in-out;
+}
+.basket__wrap.active{
+    visibility: visible;
+}
+.basket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 385px;
+    height: 100%;
+    background-color: #fff;
+    padding: 30px 20px;
+    overflow: auto;
+    z-index: 3;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.basket.active{
+    transform: translateX(0);
+}
+.basket__h2{
+    margin-bottom: 30px;
+}
+.basket__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #F3F3F3;
+    border-radius: 20px;
+}
+.basket__item__img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.basket__item__text{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-size: 14px;
+    margin-right: 12px;
+}
+.basket__item__price{
+    font-weight: bold;
+    margin-top: 8px;
+}
+.basket__item__remove-btn{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+}
+.basket__item__remove-btn img{
+    rotate: 45deg;
+}
+.basket__bottom{
+    display: flex;
+    flex-direction: column;
+}
+.basket__bill{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.basket__bill__hr{
+    flex: 1;
+    margin: 4px 8px;
+    border: none;
+    border-bottom: 1px dashed #383838;
+}
+.basket__total-prie, .basket__taxes{
+    font-weight: bold;
+}
+.basket__bottom__btn, .basket__empty__btn{
+    position: relative;
+    margin-top: 5px;
+}
+.basket__bottom__btn::after, .basket__empty__btn::after{
+    content: "";
+    position: absolute;
+    top: 22px;
+    width: 13.7px;
+    height: 12px;
+    background-image: url(../../public/img/arrow.svg);
+    background-size: cover;
+    transition: 0.2s ease-in-out;
+}
+.basket__bottom__btn::after{
+    right: 33px;
+}
+.basket__empty__btn::after{
+    left: 33px;
+    transform: rotate(180deg);
+}
+.basket__bottom__btn:hover::after{
+    transform: translateX(10px);
+}
+.basket__empty__btn:hover::after{
+    transform: translateX(-10px) rotate(180deg);
+}
+.basket__empty, .basket__checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 30px 0;
+    text-align: center;
+    color: #9D9D9D;
+}
+.basket__empty__h4{
+    margin-top: 20px;
+    color: #000;
+    font-size: 22px;
+}
+.basket__checkout img{
+    width: 83px;
+    height: 120px;
+}
+.basket__checkout__h4{
+    margin-top: 20px;
+    color: #87C20A;
+    font-size: 22px;
+}

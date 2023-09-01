@@ -1,0 +1,98 @@
+.catalog{
+    padding: 40px 0;
+}
+.catalog__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.catalog__h1{
+    font-size: 32px;
+}
+.catalog__search-bar__wrap{
+    position: relative;
+}
+.catalog__search-bar{
+    width: 300px;
+    position: relative;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+}
+.catalog__search-bar::placeholder{
+    color: #C4C4C4;
+}
+.catalog__search-bar__icon{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 15px;
+    left: 18px;
+}
+.catalog__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.catalog__card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 30px 30px;
+    font-size: 14px;
+    border: 1px solid #EAEAEA;
+    border-radius: 40px;
+}
+.catalog__card:hover{
+    box-shadow: 0 20px 30px rgb(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+.catalog__card__fav-btn{
+    position: absolute;
+    top: 30px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #F8F8F8;
+    border-radius: 7px;
+    padding-top: 4px;
+}
+.catalog__card__fav-btn.active{
+    background-color: #FEF0F0;
+}
+.catalog__card__img{
+    width: 133px;
+    height: 112px;
+}
+.catalog__card__h5{
+    width: 150px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 14px 0;
+}
+.catalog__card__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.catalog__card__prices{
+    display: flex;
+    flex-direction: column;
+}
+.catalog__card__price{
+    font-size: 11px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+.catalog__card__price-number{
+    font-weight: bold;
+}
+.catalog__card__buy-btn, .catalog__card__bought-btn{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+}
+.catalog__card__bought-btn{
+    padding-top: 3px;
+    background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+}

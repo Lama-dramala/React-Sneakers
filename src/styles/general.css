@@ -1,0 +1,28 @@
+body{
+    background-color: #E7F6FF;
+    padding: 30px 85px;    
+    font-family: 'Inter';
+}
+#root{
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none !important;
+}
+.site-btn{
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    background-color: #9DD458;
+    color: white;
+    border-radius: 18px;
+}
+.site-btn:hover{
+    text-decoration: underline;
+}
