@@ -9,7 +9,7 @@ body{
     overflow: hidden;
 }
 .main-container{
-    max-width: 960px;
+    width: 1460px;
     margin: 0 auto;
 }
 .hidden{
@@ -25,4 +25,52 @@ body{
 }
 .site-btn:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 1750px){
+    .main-container{
+        width: 1210px;
+    }
+}
+@media (max-width: 1500px){
+    .main-container{
+        width: 960px;
+    }
+}
+@media (max-width: 1200px){
+    .main-container{
+        width: 710px;
+    }    
+}
+@media (max-width: 920px){
+    body{
+        padding: 30px 45px;   
+        font-size: 14px; 
+    }
+    .main-container{
+        width: 584px;        
+    }
+}
+@media (max-width: 720px){
+    .main-container{
+        width: 380px;        
+    }
+}
+@media (max-width: 520px){
+    #root{
+        border-radius: 15px;
+    }
+    .main-container{
+        width: 300px;        
+    }
+}
+@media (max-width: 440px){
+    body{
+        padding: 20px 15px;   
+    }
+}
+@media (max-width: 360px){
+    .main-container{
+        width: 240px;        
+    }
 }

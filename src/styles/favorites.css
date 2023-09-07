@@ -40,3 +40,22 @@
 .favorites__empty__btn:hover:before{
     transform: translateX(-10px) rotate(180deg);
 }
+
+@media (max-width: 920px) {
+    .favorites__h1{
+        font-size: 24px;
+    }
+    .favorites__empty__h4{
+        font-size: 18px;
+    }
+}
+@media (max-width: 720px){
+    .favorites__h1{
+        text-align: center;
+    }
+}
+@media (max-width: 360px){
+    .favorites__empty{
+        text-align: center;
+    }
+}

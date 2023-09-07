@@ -30,7 +30,7 @@ export default function SneakersList({cards}) {
         {cards.filter((card) => card.title.toUpperCase().includes(searchValue.toUpperCase().trim()))
         .map(card => <SneakersCard props={card} key={card.id} />)}
       </div>:
-      <div>По вашему запросу не найдено ни одного результата</div>
+      <div className="catalog__empty-search">По вашему запросу не найдено ни одного результата</div>
 
       }      
       

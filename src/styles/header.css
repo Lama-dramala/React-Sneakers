@@ -31,6 +31,7 @@ header::after{
 }
 nav ul{
     display: flex;
+    align-items: center;
 }
 nav ul li{
     margin-left: 30px;
@@ -41,4 +42,21 @@ nav ul li{
 }
 .nav__basket img{
     margin-right: 10px;
+}
+
+@media (max-width: 720px){
+    header{
+        padding: 20px 0;
+    }
+    .site-logo__text{
+        display: none;
+    }
+}
+@media (max-width: 360px){
+    nav ul li{
+        margin-left: 20px;
+    }
+    .nav__basket{
+        font-size: 12px;
+    }
 }

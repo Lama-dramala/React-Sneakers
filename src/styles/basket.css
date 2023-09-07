@@ -134,3 +134,39 @@
     color: #87C20A;
     font-size: 22px;
 }
+
+@media (max-width:460px) {
+    .basket{
+        width: 320px;
+        padding: 15px 20px;
+    }
+    .basket__item__text{
+        font-size: 12px;
+        text-align: center;
+    }
+    .basket__item__remove-btn{
+        width: 25px;
+        height: 20px;
+        border-radius: 3px;
+    }
+    .basket__item__remove-btn img{
+        width: 10px;
+        height: 10px;
+    }
+    .basket__empty__btn::after{
+        display: none;
+    }
+}
+@media (max-width:380px){
+    .basket{
+        width: 280px;
+    }
+    .basket__item{
+        padding: 10px;
+    }
+    .basket__item__img{
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+}

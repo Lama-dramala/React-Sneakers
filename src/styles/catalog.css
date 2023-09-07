@@ -32,13 +32,14 @@
 }
 .catalog__content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     gap: 40px;
 }
 .catalog__card{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 210px;
     padding: 20px 30px 30px;
     font-size: 14px;
     border: 1px solid #EAEAEA;
@@ -63,6 +64,7 @@
 .catalog__card__img{
     width: 133px;
     height: 112px;
+    align-self: center;
 }
 .catalog__card__h5{
     width: 150px;
@@ -95,4 +97,84 @@
 .catalog__card__bought-btn{
     padding-top: 3px;
     background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+}
+
+@media (max-width: 1750px) {
+    .catalog__content{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 1500px) {
+    .catalog__content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 1200px) {
+    .catalog__content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 920px) {
+    .catalog__h1{
+        font-size: 24px;
+    }
+    .catalog__search-bar{
+        width: 250px;
+        padding: 10px 10px 10px 35px;
+    }
+    .catalog__search-bar__icon{        
+        top: 11px;
+        left: 13px;
+    }
+    .catalog__content{
+        gap: 20px;
+    }
+    .catalog__card{
+        width: 180px;
+        padding: 10px 15px 15px;
+        border-radius: 20px;
+    }
+    .catalog__card__fav-btn{
+        top: 15px;
+    }
+    .catalog__card__img{
+        width: 107px;
+        height: 90px;
+    }
+}
+@media (max-width: 720px){
+    .catalog{
+        padding: 20px 0;
+    }
+    .catalog__head{
+        flex-direction: column;
+    }
+    .catalog__h1{
+        margin-bottom: 20px;
+    }
+    .catalog__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .catalog__empty-search{
+        font-size: 14px;
+    }
+}
+@media (max-width: 520px){
+    .catalog__content{
+        grid-template-columns: 1fr;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .catalog__card{
+        width: 210px;
+        padding: 20px 30px 30px;
+        border-radius: 40px;
+    }
+    .catalog__card__fav-btn{
+        top: 30px;
+    }
+    .catalog__card__img{
+        width: 133px;
+        height: 112px;
+    }
 }
