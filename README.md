@@ -1,6 +1,4 @@
-# Мой первый сайт на React
-
-Это что-то вроде интернет-магазина кроссовок
+# Магазин кроссовок на React
 
 Посмотреть на сам сайт можно тут [https://react-sneakers-weld.vercel.app/](https://react-sneakers-weld.vercel.app/)
 
